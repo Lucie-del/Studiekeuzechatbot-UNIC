@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>UNIC Studiekeuzecoach</title>
+<link rel="icon" type="image/png" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap">
 <style>
@@ -20,7 +21,9 @@
 *{box-sizing:border-box;min-width:0}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 'Nunito Sans',Verdana,sans-serif;overflow-x:clip}
 header{background:var(--navy);color:#eef2f9;padding:14px max(4vw,16px);display:flex;align-items:center;gap:16px;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:14px}.logobox{background:#fff;border-radius:12px;padding:6px 10px;display:flex}.logobox img{height:44px;width:auto;display:block}
 .logo{font:700 22px/1 Rubik,Arial,sans-serif;letter-spacing:.5px}.logo b{color:var(--mint)}
+@media(max-width:480px){.logo{font-size:17px}.logobox img{height:34px}}
 header button{background:transparent;color:#eef2f9;border:1.5px solid #ffffff66;border-radius:22px;padding:10px 18px;font:600 15px 'Nunito Sans',sans-serif;cursor:pointer;min-height:44px}
 main{max-width:1240px;margin:0 auto;padding:24px max(3vw,12px);display:grid;grid-template-columns:260px minmax(0,1fr);gap:24px}
 aside,.chat,details{background:var(--panel);border-radius:20px;box-shadow:0 6px 20px #13204a14}
@@ -67,7 +70,7 @@ pre{background:var(--bot);border-radius:12px;padding:14px;font-size:13px;white-s
 </style>
 </head>
 <body>
-<header><div class="logo">UNIC <b>Studiekeuzecoach</b></div><button id="reset" type="button">↻ Opnieuw beginnen</button></header>
+<header><div class="brand"><span class="logobox"><img src="logo.png" alt="Unic, eigenzinnig vwo-havo"></span><span class="logo">Studiekeuze<b>coach</b></span></div><button id="reset" type="button">↻ Opnieuw beginnen</button></header>
 <main>
 <aside>
 <div class="kicker">VWO 6 · Studiekeuze</div>
